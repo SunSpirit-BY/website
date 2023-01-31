@@ -1,0 +1,72 @@
+.pic img{
+    display: inline-block;
+    margin-left:50px;
+    margin-right: 50px;
+width: 200px;  
+height:200px;
+border-radius: 50%;
+}
+body{
+  text-align: left;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+    margin: 50px;
+    font-size: 150%; 
+}
+div{
+ margin: 50px;
+}
+section{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
+  font-family:Arial, Helvetica, sans-serif;
+  border: solid 5px;
+  border-radius: 100px;
+}
+.li1 a{
+  font-style:italic;
+  color: rgb(0, 0, 0);
+}
+li{
+  margin-left: 20%  ;
+}
+.p1{
+  margin-left: 20%;
+}
+.left-table{
+font-size: 15px;
+  border-radius: 50px;
+  border: solid 5px;
+  padding: 6px 8px 6px 16px;
+    height: 780px;;
+    width:160px;
+    position: fixed;
+    z-index:1;
+    top: 0px;
+    left:0px;
+    overflow-x:hidden;
+    padding-top:20px;
+}
+
+.left-table a {
+  font-style:italic;
+  color: #000;
+  padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;   
+}
+.background{
+  margin: 0px;
+  width: 100%; 
+  height: 100%;
+  background-size:cover;
+  background-image: url(../pic/pic4.jpg);
+  filter: blur(5px);
+  position: fixed; /* Фиксируем на одном месте */
+  left: 0; right: 0; /* Вся ширин */
+  top: 0; bottom: 0; /* Вся высота */
+  z-index: -1; /* Фон ниже текста */
+}
+
