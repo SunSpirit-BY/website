@@ -75,3 +75,13 @@ font-size: 0.6em;
   top: 0; bottom: 0; /* Вся высота */
   z-index: -1; /* Фон ниже текста */
 }
+.button2{
+    color: rgb(0, 0, 0);
+    outline: none; /* Убираем контур вокруг ссылки */
+    background-color: #ff4d4d8f; /* Цвет фона */
+    border-radius: 5px;
+    }
+   .button2:hover {
+    background-color: #006eff; /* Цвет кнопки при наведении курсора */
+}
+
