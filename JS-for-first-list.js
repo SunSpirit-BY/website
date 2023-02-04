@@ -1,4 +1,4 @@
-alert('JS подключён.');
+'use strict';
 let But = document.querySelector('button');
 let Par = document.querySelector('.p2')
 But.onclick = function() {
