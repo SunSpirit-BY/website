@@ -16,7 +16,7 @@
 }
 html,
 body{
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     background-color: rgb(73, 44, 0);
     z-index: -10;
@@ -32,6 +32,9 @@ main{
     margin-top: 10vw;
     flex: 1 0 auto;
 }
+h1{
+  text-shadow: 5px 3px 2px #0000004d;
+}
 footer{
     box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.884);
     padding-top: 2vw;
@@ -42,6 +45,9 @@ footer{
     flex: 0 0 auto;
     background-color: rgb(46, 46, 46);
 }
+main p{
+  text-shadow: 5px 3px 2px #0000004d;
+}
 .p1{
     color:rgb(0, 0, 0);
     text-align: left;
@@ -51,7 +57,6 @@ footer{
   color: aliceblue;
   text-align: center;
 }
-
 .form1{
   box-shadow:0 0 20px rgba(255, 255, 255, 0.884);
   border-radius: 30px;
@@ -110,7 +115,7 @@ font-size: 18px;
     position: relative;
     display: inline-block;
   }
-  
+
   /* Выпадающее содержимое (скрыто по умолчанию) */
   .dropdown-content {
     
@@ -128,6 +133,7 @@ font-size: 18px;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border: solid 1px;
   }
   
   /* Изменение цвета выпадающих ссылок при наведении курсора */
