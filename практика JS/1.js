@@ -1,47 +1,77 @@
-//Домашка по теме "циклы"
-//Задание 1 Вывести числа от 1 до 5 в консоль, используя все виды циклов(fow, while, do)
-let jopa=1;
-do{console.log(jopa);
-    jopa++;
-}
-while(jopa<6)
-
-for(let x=1;x<6;x++){
-    console.log(x)
-}
-
-let y=1;
-while(y<6){
-    console.log(y);
-y++;
-}
-//Задание №2 Верно ли, что последний вывод в консоль будет 0?
-let x1=8;
-while(x1){
-    console.log(x1);
-    x1--;
-}// Неверно, т.к. переменная x1 станет 0, что вернёт false.
-
-//Задание №3   переписать данный код на while
-for(let num = 0;num < 3;num++){
-        console.log(`Число:${num}`);
-}
-//Решение
-let num1=0;
-while(num1 < 3){
-    console.log(`Число:${num1}`);
-    num1++
-}
-//Задание №4 Прекратить работу цикла, когда size=1
-for(let num2 = 0; num2 < 2;num2++){
-    for (let size = 0;size < 3;size++){
-        console.log(size);
+function calcFactorial(numOne){
+    if(numOne===1){
+        return numOne;
+    }else{
+        return numOne*calcFactorial(numOne-1);
     }
 }
-//Решение с использованием метки firstFor и cтоп-крана break
-firstFor:for(let num2 = 0; num2 < 2;num2++){
-    for (let size = 0;size < 3;size++){
-        console.log(size);
-        if (size=1) {break firstFor}
+console.log(calcFactorial(100));
+
+function square(x){
+    return Math.sin(x);
+}
+function integral(f,a,b,n){
+    let S=0;
+    let step=(b-a)/n;
+    for(let i = a; i <= b; i = i + step)
+    {S=S+f(i)*step}
+    return S;
+}
+console.log (integral(square,0,1,100000))    
+
+
+function zakonOma(r){
+    return (r);
+}
+function R(v,i){
+    if(v*i===0){
+        console.log(`Недопустимое значение`);
+    }
+    else{return v/i}
+}
+console.log (R(10,4));    
+//обьекы
+//Проверка существования свойства
+let userInfo = {
+    name: 'Ваня',
+    age: 30,
+    address:{
+        city: 'Minsk',
+        street: 'Pervomayskaya',
     }
 }
+//Если юзер инфо эйдж существует, то консоль лог работает.
+if(userInfo.age){
+    console.log(userInfo.age);
+}
+//Проверка  помощью опциональной цепочки и оператора ?
+console.log(userInfo?.address?.street);
+// Проверка с помощью оператора in
+if('street'in userInfo){
+    console.log(userInfo.name);
+}
+
+
+
+
+let userInfo1 = {
+    name: "Вася",
+    age: 30
+}
+let user = userInfo1;
+user.age = 45; 
+console.log(userInfo1.age);
+
+let userInfo2 = {
+    name: "Вася",
+    age: 30,
+}
+for (const key in userInfo2) {
+    const value = userInfo2[key];
+    console.log(value);
+}
+
+
+let arrowOne= ['Иван', 'Никита', 'Дмитрий',];
+let arrowTwo=arrowOne.slice(0,2);
+console.log(arrowTwo);
